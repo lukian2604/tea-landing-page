@@ -1,0 +1,123 @@
+.header {
+  --headerPaddingBlock: 60px;
+
+  padding-block: var(--headerPaddingBlock);
+
+  @include desktop {
+    --headerPaddingBlock: 30px;
+  }
+
+  @include tablet {
+    --container-padding-x: 60px;
+  }
+
+  @include mobile {
+    --container-padding-x: 10px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+
+    @include desktop-above {
+      margin-top: -30px;
+    }
+
+    @include tablet {
+      margin-right: -70px;
+    }
+
+    @include tablet-above {
+      margin-right: 60px;
+    }
+
+    @include mobile {
+      margin-right: -90px;
+      width: 40px;
+      height: 56px;
+    }
+  }
+
+  &__menu {
+    font-family: var(--font-family-alt);
+    font-size: 18px;
+
+    @include desktop {
+      margin-right: auto;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 65px;
+
+      @include tablet-s {
+        column-gap: 50px;
+      }
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      transition-duration: var(--transition-duration);
+
+      @include hover {
+        color: var(--color-brown);
+
+        &::after {
+          width: 100%;
+          color: currentColor;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0px;
+        height: 2px;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        background-color: currentColor;
+        transition-duration: inherit;
+      }
+    }
+  }
+
+  &__actions {
+    &-list {
+      display: inline-flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+
+    &-item {
+      &:last-child {
+        margin-left: 80px;
+      }
+      @include hover {
+        color: var(--color-brown);
+        transition-duration: var(--transition-duration);
+      }
+
+      @include desktop {
+        &:last-child {
+          margin-left: 30px;
+        }
+      }
+
+      @include mobile-s {
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
