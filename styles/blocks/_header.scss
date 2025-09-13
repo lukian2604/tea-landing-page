@@ -1,10 +1,10 @@
 .header {
-  --headerPaddingBlock: 60px;
+  --headerPaddingTopBlock: 60px;
 
-  padding-block: var(--headerPaddingBlock);
+  padding-block: var(--headerPaddingTopBlock);
 
   @include desktop {
-    --headerPaddingBlock: 30px;
+    --headerPaddingTopBlock: 30px;
   }
 
   @include tablet {
@@ -29,7 +29,7 @@
     }
 
     @include tablet {
-      margin-right: -70px;
+      margin-right: -80px;
     }
 
     @include tablet-above {
@@ -40,6 +40,10 @@
       margin-right: -90px;
       width: 40px;
       height: 56px;
+    }
+
+    @include mobile-s {
+      margin-right: -75px;
     }
   }
 
