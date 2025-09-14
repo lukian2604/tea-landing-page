@@ -17,4 +17,17 @@
   --font-family-alt: "Open Sans", sans-serif;
 
   --transition-duration: 0.2s;
+
+  @include desktop {
+    --container-padding-Y: 60px;
+  }
+
+  @include mobile {
+    --container-padding-Y: 30px;
+    --container-padding-x: 10px;
+  }
+
+  @include mobile-s {
+    --container-padding-Y: 35px;
+  }
 }
