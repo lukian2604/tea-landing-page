@@ -6,6 +6,7 @@
 @import "utils";
 @import "globals";
 
+@import "blocks/grid";
 @import "blocks/button";
 @import "blocks/burger-button";
 @import "blocks/cross_button";
@@ -15,3 +16,6 @@
 @import "blocks/hero";
 @import "blocks/quote";
 @import "blocks/types-tea";
+@import "blocks/review";
+@import "blocks/blog";
+@import "blocks/blog-card";
