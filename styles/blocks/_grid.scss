@@ -33,4 +33,14 @@
       --gridColumns: 1;
     }
   }
+
+  &--4__alt {
+    @include desktop {
+      --gridColumns: 2;
+    }
+
+    @include mobile {
+      --gridColumns: 1;
+    }
+  }
 }

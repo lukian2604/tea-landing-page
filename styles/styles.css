@@ -377,6 +377,16 @@ a {
     --gridColumns: 1;
   }
 }
+@media (max-width: 1000px) {
+  .grid--4__alt {
+    --gridColumns: 2;
+  }
+}
+@media (max-width: 480px) {
+  .grid--4__alt {
+    --gridColumns: 1;
+  }
+}
 
 .button {
   display: inline-flex;
@@ -1147,4 +1157,75 @@ a {
   font-family: var(--font-family-alt);
   font-size: 13px;
   font-weight: 300;
+}
+
+.prioritise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 60px;
+}
+@media (max-width: 480px) {
+  .prioritise {
+    row-gap: 30px;
+  }
+}
+.prioritise__title {
+  font-size: 40px;
+  font-weight: 400;
+}
+@media (max-width: 360px) {
+  .prioritise__title {
+    font-size: 24px;
+  }
+}
+.prioritise__list {
+  row-gap: 30px;
+  column-gap: 50px;
+}
+@media (max-width: 1000px) {
+  .prioritise__list {
+    column-gap: 210px;
+  }
+}
+@media (max-width: 768px) {
+  .prioritise__list {
+    column-gap: 90px;
+  }
+}
+@media (max-width: 480px) {
+  .prioritise__list {
+    row-gap: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .prioritise__list {
+    row-gap: 40px;
+  }
+}
+.prioritise__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.prioritise__item-title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.prioritise-title, .prioritise__subtitle {
+  font-family: var(--font-family-alt);
+}
+.prioritise__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+@media (max-width: 360px) {
+  .prioritise__subtitle {
+    margin-bottom: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */
