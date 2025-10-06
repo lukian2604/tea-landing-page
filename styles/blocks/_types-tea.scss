@@ -67,5 +67,19 @@
         margin-inline: 0;
       }
     }
+
+    @media (max-width: 360px) {
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+
+      &:nth-child(5) {
+        margin-inline: 0;
+      }
+    }
   }
 }
