@@ -1,0 +1,22 @@
+body {
+  @include flui-text(24, 16);
+
+  font-family: var(--font-family-base);
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

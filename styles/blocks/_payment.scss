@@ -1,0 +1,12 @@
+.payment-methods {
+  &__list {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,41 @@
+.hero {
+  color: var(--color-light);
+
+  &-section {
+    padding-top: 254px;
+    padding-bottom: 50px;
+    background: url(../../images/hero.jpg) left/cover no-repeat;
+    margin-bottom: 75px;
+
+    @include desktop {
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+
+      padding-top: 280px;
+    }
+
+    @include mobile-s {
+      padding-top: 230px;
+      padding-bottom: 30px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    @include flui-text(60, 24);
+
+    max-width: 790px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__descritpion {
+    @include flui-text(24, 13);
+
+    max-width: 560px;
+    line-height: 1.2;
+  }
+}
